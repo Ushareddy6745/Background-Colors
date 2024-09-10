@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+        body { 
+        background-color:darksalmon;
+        }
+
+        header {
+             background-color:black;
+             padding: 20px; 
+             text-align: center; 
+             color:grey;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        nav ul {
+             text-align: center; 
+            }
+        nav ul li {
+             display: inline; 
+            margin-right: 20px;
+         }
+        nav ul li a {
+             color: white;
+             text-decoration: none; 
+             font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+        section {
+             padding: 20px;
+             text-align: center; 
+            }
+        #home h2{
+            font-style: italic;
+            color:darkred;
+        }
+      
+        .container {
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px;
+         }
+
+            .container h2{
+                font-size: 50px;
+                font-family:Georgia, 'Times New Roman', Times, serif ;
+            }
+        .product-list { 
+            display: flex;
+             flex-wrap: wrap;
+              justify-content: space-between; 
+            }
+        .product-item { 
+            width: 30%;
+              padding: 15px;
+               margin-bottom: 20px; 
+            }
+        .product-item img {
+             width: 100%; 
+            height: auto; 
+        }
+        .product-item h3 {
+             margin: 10px 0; 
+             color: darkblue;
+            }
+        .product-item p { 
+            color: #555;
+         }
+        .product-item button { 
+            background-color:brown; 
+            color: white;
+             border: none; 
+             padding: 10px 20px;
+               }
+               .about{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+               }
+        .about, .contact {
+              padding: 50px 20px; 
+            }
+        form {
+             max-width: 600px; 
+             margin: 0 auto;
+              text-align: left;
+             }
+        form input, form textarea {
+             width: 100%;
+              padding: 10px; 
+              margin: 10px 0;
+               border: 1px solid #ccc;
+             }
+        form button { 
+            background-color: #007bff; 
+            color: white;
+             border: none; 
+             padding: 10px 20px; 
+             }
+             footer {
+             background-color: #333; 
+            color: white;
+             text-align: center; 
+             padding: 10px 0;
+              margin-top: 20px; }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Usha's Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="container">
+        <h2>Welcome to Usha's Shop</h2>
+        <p>Your one-stop shop for the best products online. Browse through our catalog and find your next purchase!</p>
+    </section>
+    <section id="products" class="container">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20221230/xKVD/63ae89beaeb269659c174cf4/-473Wx593H-443001036-navy-MODEL.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <p>High-quality product with excellent features.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240418/gWym/6620f67f05ac7d77bb161c1c/-473Wx593H-466328382-pink-MODEL.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$49.99</p>
+                <p>Top-selling product with fantastic reviews.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20220905/fq1H/6315cf42f997dd1f8ddd3ad5/-473Wx593H-469258342-darkgreen-MODEL.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$19.99</p>
+                <p>Affordable and high-quality.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a trusted online store that has been serving customers with quality products for over a decade. Our mission is to offer the best products at competitive prices.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Simple Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
